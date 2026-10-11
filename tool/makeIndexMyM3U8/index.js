@@ -40,12 +40,12 @@ async function ss() {
 
 			const m3u8Path = path.join(currentDir, entry.name);
 
-			// 根据 m3u8 的前缀找对应的 _index.txt（如 123_index.m3u8 <-> 123_index.txt）
+			// 根据 m3u8 的前缀找对应的 _mixed.txt（如 123_index.m3u8 <-> 123_mixed.txt）
 			const base = entry.name.slice(0, -'_index.m3u8'.length);
-			const txtPath = path.join(currentDir, base + '_index.txt');
+			const txtPath = path.join(currentDir, base + '_mixed.txt');
 
 			if (!fs.existsSync(txtPath)) {
-				console.log('[跳过] 缺少对应的 _index.txt: ' + m3u8Path);
+				console.log('[跳过] 缺少对应的 _mixed.txt: ' + m3u8Path);
 				continue;
 			}
 
