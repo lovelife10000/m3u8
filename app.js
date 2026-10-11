@@ -4,8 +4,10 @@ require('dotenv').config();
 async function initApp() {
 
 	try {
-		processM3u8Files();
 
+		processM3u8Files().then(() => {
+			console.log('🎉 所有目录扫描处理完毕！');
+		});
 
 	} catch (e) {
 		console.log('catch in app.js error', e);
