@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/lovelife10000/m3u8#readme",
   "dependencies": {
+    "crypto": "^1.0.1",
     "dotenv": "^18.0.7"
   },
   "devDependencies": {

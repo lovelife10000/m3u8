@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 
 const rootDir = '/Volumes/macpan/get_m3u8/videos2';
-// const rootDir = path.resolve(process.argv[2] || path.join(__dirname, 'videos'));
 
 async function ss() {
 
